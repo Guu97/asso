@@ -79,9 +79,11 @@ body:not(#head){
 }
 
 .box{
-    border:1px rgb(130,130,130) solid;
+
+    padding-top:30px;
+   /* border:1px rgb(130,130,130) solid;
     border-radius: 5px;
-    margin:30px auto;
+    margin:30px auto;*/
    /* transition: 0.2s margin-right;*/
 }
 
