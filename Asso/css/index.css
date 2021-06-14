@@ -1,0 +1,183 @@
+#head{
+    height:100px;
+    background-color: #4f4f4f;
+}
+
+.outer {
+	-webkit-column-count: 2;
+    column-count: 2;
+    margin:30px;
+}
+.inner {
+    text-align: center;
+    width: 100%;
+}
+.listCell{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'ABeeZee';
+    font-size: 17pt;
+    color:white;
+    padding-bottom:10px;
+    transition: 0.3s box-shadow;
+    
+}
+
+.listCell:hover{
+    box-shadow: 0px -3px 0px white inset;
+    cursor:pointer;
+    animation:underline 0.3s alternate;
+    animation-timing-function: ease;
+}
+
+#logo{
+    height:100px;
+    background-color: #ededed;
+    border-radius:15px 15px 0px 0px;
+    /*box-shadow: inset 0 0 20px grey;*/
+}
+#title{
+    color:red;
+    font-size: 35pt;
+    vertical-align: bottom;
+    font-family: 'Montserrat';
+}
+#card{
+    width:240px;
+}
+
+.heart {
+    margin:20px;
+    fill: red;
+    position: relative;
+    top: 5px;
+    width: 50px;
+    animation: pulse 1s ease infinite;
+  }
+  
+@keyframes pulse {
+0% { transform: scale(1); }
+50% { transform: scale(1.3); }
+100% { transform: scale(1); }
+}
+
+@keyframes underline{
+    0% { box-shadow: 0px 0px 0px white inset; }
+    100%{ box-shadow: 0px -3px 0px white inset; }
+}
+
+body:not(#head){
+    background-color: #ffeecf;
+}
+#boxFrase{
+    width:380px;
+    height:265px;
+    border:1px rgb(130,130,130) solid;
+    border-radius: 5px;
+    margin:30px auto;
+   /* transition: 0.2s margin-right;*/
+}
+
+.box{
+    border:1px rgb(130,130,130) solid;
+    border-radius: 5px;
+    margin:30px auto;
+   /* transition: 0.2s margin-right;*/
+}
+
+
+
+#boxFrase #text{
+    padding:20px;
+    text-align:center;
+    
+}
+.boxFrase{
+    text-align: center;
+    transition:0.2s color;
+}
+.boxFrase:hover{
+    color:rgb(131, 131, 131)
+}
+
+.boxAutore{
+    padding-top:20px;
+}
+.frase{
+    font-size: 25px;
+    font-family: 'Montserrat';
+}
+.autore{
+    font-family: 'Dancing Script';
+    font-size:33px;
+    margin-top: 20px;
+}
+
+.boxImg{
+    border-radius: 5px;
+    /*border:white solid 1px;*/
+    height:300px;
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.2s background-size;
+}
+.boxImg:hover{
+    background-size: 110%;
+}
+.boxImg a{
+    text-decoration: none;
+}
+
+.inner a{
+    text-decoration: none;
+}
+
+#boxCucina a{
+    text-decoration: none;
+}
+
+.textBoxImg{
+    text-align: center;
+    padding-top: 7em;
+}
+.spanImg{
+    font-family: 'Quicksand';
+    color:white;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px #000000;
+    outline: none;
+}
+
+
+
+#imgPizza{
+    background-image: url("../img/pizzaOven.jpg");
+}
+#imgCucina{
+    background-image: url("../img/cucina.jpg");
+}
+
+
+.boxContact {
+    margin:30px;
+    text-align:center;
+}
+
+table td{
+    padding:5px;
+}
+
+#tableContact{
+    margin: 30px auto;
+}
+
+/*GOOGLE MAPS*/
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+  }
